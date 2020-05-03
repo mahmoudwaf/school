@@ -15,7 +15,7 @@
      
             stage('Create Tomcat Docker Image'){
                 steps {
-                    sh "docker build ./school -t tomcatSchool:${env.BUILD_ID}"
+                    sh "docker build ./school -t tomcatschool:${env.BUILD_ID}"
                 }
             }
      
