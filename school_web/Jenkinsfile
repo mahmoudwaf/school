@@ -3,7 +3,7 @@
         stages {
             stage('Build Application') {
                 steps {
-                    sh 'mvn -f jsf-docker/pom.xml clean package'
+                    sh 'mvn -f school_web/pom.xml clean package'
                 }
                 post {
                     success {
@@ -13,9 +13,10 @@
                 }
             }
      
+     
             stage('Create Tomcat Docker Image'){
                 steps {
-                    sh "docker build ./jsf-docker -t tomcatsamplewebapp:${env.BUILD_ID}"
+                    sh "docker build ./school_web -t schoolwebapp:${env.BUILD_ID}"
                 }
             }
      
