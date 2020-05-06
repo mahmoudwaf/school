@@ -1,8 +1,8 @@
-   FROM tomcat:8.0
+   FROM tomcat:latest
      
    ADD **/*.war /usr/local/tomcat/webapps/
      
-    EXPOSE 8088
+    EXPOSE 8888
      
     CMD ["catalina.sh", "run"]
 
