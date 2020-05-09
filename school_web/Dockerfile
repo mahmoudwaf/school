@@ -1,4 +1,6 @@
    FROM tomcat:latest
+   
+   FROM mysql:latest
      
    ADD **/*.war /usr/local/tomcat/webapps/
      

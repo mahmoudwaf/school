@@ -48,6 +48,18 @@
 		    <artifactId>spring-jdbc</artifactId>
 		    <version>4.3.26.RELEASE</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.6</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>jstl</groupId>
+		  <artifactId>jstl</artifactId>
+		  <version>1.2</version>
+		</dependency>
 
   </dependencies>
   
@@ -76,9 +88,9 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
           <configuration>
-          		<!-- 
+          		 
           		<outputDirectory>D:\tutorials\aa_devops\jboss-as-7.1.1.Final\standalone\deployments</outputDirectory>
-          		 -->
+          		 
        	 </configuration>
         </plugin>
         <plugin>
