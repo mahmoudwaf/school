@@ -88,9 +88,9 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
           <configuration>
-          		 
+          		 <!-- 
           		<outputDirectory>D:\tutorials\aa_devops\jboss-as-7.1.1.Final\standalone\deployments</outputDirectory>
-          		 
+          		  -->
        	 </configuration>
         </plugin>
         <plugin>
