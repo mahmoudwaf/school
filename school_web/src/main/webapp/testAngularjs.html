@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1256">
+<title>Insert title here</title>
+<script type="text/javascript" src="/resource/js/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module('Hello-AngularJs',[])
+	.controller("HelloController",function($scope){
+		$scope.helloTo.title = "World, AngularJS";  
+	});
+</script>
+</head>
+<body ng-app="Hello-AngularJs">
+	<div ng-controller="HelloController">
+		<h2>{{helloTo.title}}</h2>
+	</div>
+</body>
+</html>
